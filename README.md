@@ -97,6 +97,13 @@ What's wrong with the following output? What would be the actual output? [2p] Mo
 Blackberry is created
 4
 ```
+As Blackberry extends Apple, Apple's constructor would be printed as well. 
+Output would be: 
+Apple is created
+Blackberry is created
+4
+To fix it I would not extend Apple - as there is no more needed information coming 
+from that class (yet).
 
 #### Explain what you did, and answer the questions here:
 
@@ -104,10 +111,13 @@ Blackberry is created
 ## 4. Question time! (~20 mins) [6p]
 
 ### Whats the difference between a Class and an Object? [2p]
-#### Your answer:
+#### Your answer: A Class is a template for creating objects. E.g. Humans is a class, where each person is
+an object. Class is not particularly an object, but represents the objects in general - based on defined parameters: state and behaviour. 
+
 
 ### What is the superclass when a class doesnt extend anything? What methods will it inherit (the two most important is enough)? [2p]
-#### Your answer:
+#### Your answer: By default java.lang.object is inherited. 
+Every method is inheriting Object class. 
 
 ### What is polymorphism? [2p]
-#### Your answer:
+#### Your answer:When a subclass method overwrites the original method of the superclass,creating unique behaviour. 
